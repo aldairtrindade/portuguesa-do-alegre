@@ -11,7 +11,7 @@ body{
 
 header{
     text-align: center;
-    background-image: linear-gradient(to bottom, white, green, red);
+    background-image: linear-gradient(to bottom, white, green, red, rgba(255, 0, 0, 0.655));
 }
 
 header h1{
@@ -52,6 +52,7 @@ main{
 section{
     background-color: rgba(0, 0, 0, 0.636);
     margin: 0px 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 section h1{
@@ -75,13 +76,14 @@ section p{
     color: white;
     width: auto;
     padding: 10px;
-    margin: 10px;
+    margin: auto;
     min-width: 200px;
 }
 
 article{
     background-color: rgba(0, 0, 0, 0.603);
-    margin: 0px 20px 20px 20px;
+    margin: 0px 10px;
+    border-radius: 10px;
 }
 
 article h1{
@@ -90,11 +92,24 @@ article h1{
     font-size: 2.2em;
     padding-top: 40px;
     padding-bottom: 20px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 article aside h2{
     color: white;
     text-align: center;
+}
+
+article aside h3{
+    color: white;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+article aside ol{
+    margin-left: 40px;
+    color: white;
+    padding-bottom: 30px;
 }
 
 aside#conteiner{
@@ -148,9 +163,10 @@ div#fora{
 }
 
 footer p{
-    background-color: black;
+    background-image: linear-gradient(to top, black, black, transparent);
     color: white;
     text-align: center;
     font-weight: bold;
-    padding-bottom: 15px;
+    padding-top: 500px;
+    padding-bottom: 20px;
 }
