@@ -166,6 +166,30 @@ div#fora{
     transform: translate(150%, -50%);
 }
 
+div#nome01{
+    position: absolute;
+    height: 40px;
+    width: 75px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-260%, 140%);
+}
+
+div#nome02{
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(155%, 140%);
+}
+
+div p{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
 footer p{
     background-image: linear-gradient(to top, black, black, transparent);
     color: white;
