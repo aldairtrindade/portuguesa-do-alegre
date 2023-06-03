@@ -48,7 +48,7 @@ main{
     background-size: cover;
     background-attachment: scroll;
 
-    min-width: 280px;
+    min-width: 200px;
     max-width: 800px;
     margin: auto;
 }
@@ -108,6 +108,12 @@ article aside h3{
     color: white;
     margin-left: 10px;
     padding-bottom: 10px;
+}
+
+article h4{
+    text-align: center;
+    color: white;
+    font-size: large;
 }
 
 article aside ol{
