@@ -122,9 +122,10 @@ article aside ol{
     padding-bottom: 30px;
 }
 
-aside#conteiner{
+aside#conteiner01{
     position: relative;
     height: 30vh;
+    width: auto;
 }
 
 div#casa{
@@ -178,7 +179,7 @@ div#nome01{
     width: 75px;
     left: 50%;
     top: 50%;
-    transform: translate(-260%, 140%);
+    transform: translate(-260%, 150%);
 }
 
 div#nome02{
@@ -188,6 +189,16 @@ div#nome02{
     left: 50%;
     top: 50%;
     transform: translate(155%, 140%);
+}
+
+div#marcadores01{
+    position: absolute;
+    font-size: small;
+    height: 60px;
+    width: 105px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-120%, 55%);
 }
 
 div p{
