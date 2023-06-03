@@ -125,6 +125,7 @@ article aside ol{
 aside#conteiner01{
     position: relative;
     height: 30vh;
+    min-width: 200px;
     width: auto;
 }
 
