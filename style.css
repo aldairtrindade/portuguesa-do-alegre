@@ -125,7 +125,7 @@ article aside ol{
 aside#conteiner01{
     position: relative;
     height: 30vh;
-    min-width: 200px;
+    min-width: 180px;
     width: auto;
 }
 
@@ -193,6 +193,16 @@ div#nome02{
 }
 
 div#marcadores01{
+    position: absolute;
+    font-size: small;
+    height: 60px;
+    width: 105px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-120%, 55%);
+}
+
+div#marcadores02{
     position: absolute;
     font-size: small;
     height: 60px;
