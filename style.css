@@ -127,6 +127,7 @@ aside#conteiner01{
     height: 30vh;
     margin: auto;
     width: auto;
+    min-width: 100px;
 }
 
 div#casa{
