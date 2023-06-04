@@ -122,6 +122,10 @@ article aside ol{
     padding-bottom: 30px;
 }
 
+.jogos{
+    display: flex;
+}
+
 aside#conteiner01{
     position: relative;
     height: 30vh;
