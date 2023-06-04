@@ -130,8 +130,9 @@ aside#conteiner01{
     position: relative;
     height: 30vh;
     margin: auto;
-    width: auto;
+    width: 96vw;
     min-width: 100px;
+    max-width: 800px;
 }
 
 div#casa{
