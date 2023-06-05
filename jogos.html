@@ -5,7 +5,225 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portuguesa</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    text-align: center;
+    background-image: linear-gradient(to bottom, white, green, red, rgba(255, 0, 0, 0.655));
+}
+
+header h1{
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.429);
+    font-size: 3em;
+}
+
+nav{
+    padding: 10px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: normal;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.378);
+}
+
+a:hover{
+    background-color: green;
+    color: red;
+}
+
+main{
+    background-image: url('imagens/wallpaper02.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+
+    min-width: 200px;
+    max-width: 800px;
+    margin: auto;
+}
+
+article{
+    background-color: rgba(0, 0, 0, 0.603);
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+
+article h1{
+    color: white;
+    text-align: center;
+    font-size: 2.2em;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.603);
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+
+article aside h2{
+    color: white;
+    text-align: center;
+}
+
+article aside h3{
+    color: white;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+article h4{
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+article aside ol{
+    margin-left: 40px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+aside#conteiner01{
+    position: relative;
+    height: 30vh;
+    margin: auto;
+    width: auto;
+    min-width: 100px;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.603);
+    margin: 0px 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 20px;
+}
+
+aside#conteiner02{
+    position: relative;
+    height: 30vh;
+    margin: auto;
+    width: auto;
+    min-width: 100px;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.603);
+    margin: 0px 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+div#casa{
+    position: absolute;
+    height: 100px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-250%, -50%);
+}
+
+div#placar01{
+    position: absolute;
+    height: 100px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-150%, -50%);
+}
+
+div#x{
+    position: absolute;
+    height: 100px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#placar02{
+    position: absolute;
+    height: 100px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+div#fora{
+    position: absolute;
+    height: 100px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(150%, -50%);
+}
+
+div#nome01{
+    position: absolute;
+    height: 40px;
+    width: 75px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-260%, 150%);
+}
+
+div#nome02{
+    position: absolute;
+    height: 40px;
+    width: 75px;
+    left: 50%;
+    top: 50%;
+    transform: translate(155%, 140%);
+}
+
+div#marcadores01{
+    position: absolute;
+    font-size: small;
+    height: 60px;
+    width: 105px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-120%, 55%);
+}
+
+div#marcadores02{
+    position: absolute;
+    font-size: small;
+    height: 60px;
+    width: 105px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-120%, 55%);
+}
+
+div p{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer p{
+    background-image: linear-gradient(to top, black, black, transparent);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 500px;
+    padding-bottom: 20px;
+}
+
+    </style>
 </head>
 <body>
     <header>
@@ -21,6 +239,69 @@
         <article>
             <h1>Jogos Da Portuguesa</h1>
 
+            <aside id="conteiner01">
+                <h2>Ida - Sábado 10/06/2023</h2>
+
+                <br>
+
+                <h4>Titular</h4>
+
+                <div id="casa">
+                    <img src="imagens/escudos/escudo_pq.png" alt="escudo portuguesa">
+                </div>
+                <div id="placar01">
+                    <img src="imagens/placar/placar00.png" alt="placar01">
+                </div>
+                <div id="x">
+                    <img src="imagens/placar/x.png" alt="x">
+                </div>
+                <div id="placar02">
+                    <img src="imagens/placar/placar00.png" alt="placar01">
+                </div>
+                <div id="fora">
+                    <img src="imagens/escudos/fluminense-escudo-pq.png" alt="escudo visitante">
+                </div>
+                <div id="nome01">
+                    <p>Portuguesa do Alegre</p>
+                </div>
+                <div id="nome02">
+                    <p>Fluminense do Quatí</p>
+                </div>
+                <div id="marcadores02">
+                    
+                </div>
+            </aside>
+            <aside id="conteiner02">
+
+                <br>
+
+                <h4>Aspirante</h4>
+
+                <div id="casa">
+                    <img src="imagens/escudos/escudo_pq.png" alt="escudo portuguesa">
+                </div>
+                <div id="placar01">
+                    <img src="imagens/placar/placar00.png" alt="placar01">
+                </div>
+                <div id="x">
+                    <img src="imagens/placar/x.png" alt="x">
+                </div>
+                <div id="placar02">
+                    <img src="imagens/placar/placar00.png" alt="placar02">
+                </div>
+                <div id="fora">
+                    <img src="imagens/escudos/fluminense-escudo-pq.png" alt="escudo visitante">
+                </div>
+                <div id="nome01">
+                    <p>Portuguesa do Alegre</p>
+                </div>
+                <div id="nome02">
+                    <p>Fluminense do Quatí</p>
+                </div>
+                <div id="marcadores01">
+                    
+                </div>
+            </aside>
             <aside id="conteiner01">
                 <h2>Ida - Sábado 03/06/2023</h2>
 
@@ -57,7 +338,7 @@
                     <p>Rafa</p>
                 </div>
             </aside>
-            <aside id="conteiner01">
+            <aside id="conteiner02">
 
                 <br>
 
@@ -91,7 +372,7 @@
             </aside>
         </article>
         <footer>
-            <p>Site Criado Por Aldair Trindade</p>
+            <p>Desenvolvido Por Aldair Trindade</p>
         </footer>
     </main>
 </body>
