@@ -81,21 +81,11 @@
             padding-bottom: 20px;
         }
 
-        main div{
-            height: 400px;
-            width: auto;
-        }
-
-        main aside div{
-            height: 100px;
-            width: 80px;
-            margin-bottom: 10px;
-        }
-
-        main aside div p{
-            color: white;
-            font-size: bold;
-            
+        main>article>img{
+            min-width: 100px;
+            max-width: 800px;
+            width: 100%;
+            margin: auto;
         }
 
         main article h3{
@@ -115,8 +105,24 @@
             margin-top: 2px;
         }
 
+        main aside div{
+            height: 100px;
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        main aside div p{
+            color: white;
+            font-size: bold;
+        }
+
         main article aside p{
             font-weight: bold;
+        }
+
+        main article aside img{
+            margin: auto;
+            width: 95%;
         }
 
         aside#conteiner01{
@@ -186,10 +192,6 @@
             transform: translate(-36%, 20%);
         }
 
-        div img{
-            width: 95%;
-        }
-
         footer{
             background-image: linear-gradient(to top, black, black, black, black, transparent);
         }
@@ -217,6 +219,7 @@
             margin: auto;
             width: auto;
         }
+
     </style>
 </head>
 <body>
@@ -234,16 +237,12 @@
             <h1>Elenco</h1>
 
             <h2>Titular</h2>
-
-            <div>
-
-            </div>
+            
+            <img src="imagens/elenco/titular.jpg" alt="time titular">
 
             <h2>Aspirante</h2>
 
-            <div>
-
-            </div>
+            <img src="imagens/elenco/aspirantes.jpg" alt="time aspirantes">
 
             <h2>Jogadores:</h2>
 
