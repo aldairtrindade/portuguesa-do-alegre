@@ -10,6 +10,102 @@
     <link rel="stylesheet" href="style.css">
     <style>
 
+        div#moldura{
+            position: relative;
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#cardEsquerdo{
+            position: relative;
+            width: 160px;
+            height: 170px;
+            margin: 5px;
+            background-color: rgba(49, 49, 49, 0.836);
+            box-shadow: 2px 2px 20px 2px rgb(147, 146, 146);
+            border-radius: 10px;
+            overflow: hidden;
+            border-top: rgb(255, 255, 255);
+            border-left: rgb(255, 254, 254);
+        }
+
+        div#cardEsquerdo h2{
+            font-size: 1.7em;
+            color: white;
+            text-shadow: 1px 1px 2px rgb(147, 146, 146);
+        }
+
+        div#cardEsquerdo img{
+            width: 50px;
+        }
+
+        div#cardEsquerdo p{
+            font-size: 0.9em;
+
+        }
+
+        div#cardCentral{
+            position: relative;
+            width: 180px;
+            height: 200px;
+            margin: 5px;
+            margin-right: 0px;
+            background-color: rgba(49, 49, 49, 0.901);
+            box-shadow: 2px 2px 20px 2px rgb(218, 165, 32);
+            border-radius: 10px;
+            overflow: hidden;
+            border-top: white;
+            border-left: white;
+        }
+
+        div#cardCentral h1{
+            font-size: 2em;
+            color: white;
+            text-shadow: 1px 1px 2px rgb(218, 165, 32);
+        }
+
+        div#cardCentral img{
+            width: 60px;
+        }
+
+        div#cardDireito{
+            position: relative;
+            width: 140px;
+            height: 150px;
+            margin: 5px;
+            background-color: rgba(49, 49, 49, 0.832);
+            box-shadow: 2px 2px 20px 2px rgb(140, 91, 1);
+            border-radius: 10px;
+            overflow: hidden;
+            border-top: rgb(255, 255, 255);
+            border-left: rgb(255, 254, 254);
+        }
+
+        div#cardDireito h3{
+            font-size: 1.5em;
+            color: white;
+            text-shadow: 1px 1px 2px rgb(140, 91, 1);
+        }
+
+        div#cardDireito img{
+            width: 40px;
+        }
+
+        div#cardDireito p{
+            font-size: 0.8em;
+
+
+        }
+
+        div#conte{
+            position: absolute;
+            padding: 10px;
+            text-align: center;
+
+        }
+
         article{
             background-color: rgba(0, 0, 0, 0.603);
             margin: 0px 5px;
@@ -17,7 +113,7 @@
             padding-top: 2px;
         }
 
-        article h1{
+        article > h1{
             color: white;
             text-align: center;
             font-size: 2.2em;
@@ -28,15 +124,19 @@
             border-radius: 10px;
         }
 
+        article > h2{
+            color: white;
+            text-align: center;
+            font-size: 1.7em;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            margin: 0px 5px;
+            border-radius: 10px;
+        }
+
         article aside h2{
             color: white;
             text-align: center;
-        }
-
-        article aside h3{
-            color: white;
-            margin-left: 10px;
-            padding-bottom: 10px;
         }
 
         article h4{
@@ -221,11 +321,245 @@
         </nav>
     </header>
     <main>
-        <div id="temporada" >
+        <div id="temporada"  onclick="clickDetalhes()">
             Temporada 2023
         </div>
         <article id="conteudo">
-            <h1>Jogos da Portuguesa</h1>
+
+            <h1>Artilharia</h1>
+
+            <h2>Geral</h2>
+
+            <div id="moldura">
+                <div id="cardEsquerdo">
+                    <div id="conte">
+                        <h2>2°</h2>
+                        <img src="imagens/elenco/elenco_1.png" alt="artilheiro">
+                        <p>_ Marcos Jr _</p>
+                        <p>29 Gols</p>
+                        <h2>🥈</h2>
+                    </div>
+                </div>
+                <div id="cardCentral">
+                    <div id="conte">
+                        <h1>1°</h1>
+                        <img src="imagens/elenco/elenco_1.png" alt="artilheiro">
+                        <p>🏆 Nivaldo 🏆</p>
+                        <p>34 Gols</p>
+                        <h1>🥇</h1>
+                    </div>
+                </div>
+                <div id="cardDireito">
+                    <div id="conte">
+                        <h3>3°</h3>
+                        <img src="imagens/elenco/elenco_1.png" alt="artilheiro">
+                        <p>__ Ricardo __</p>
+                        <p>26 Gols</p>
+                        <h3>🥉</h3>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h2>Titular</h2>
+
+            <div id="moldura">
+                <div id="cardEsquerdo">
+                    <div id="conte">
+                        <h2>2°</h2>
+                        <img src="imagens/elenco/elenco_1.png" alt="artilheiro">
+                        <p>___ Edson ___</p>
+                        <p>17 Gols</p>
+                        <h2>🥈</h2>
+                    </div>
+                </div>
+                <div id="cardCentral">
+                    <div id="conte">
+                        <h1>1°</h1>
+                        <img src="imagens/elenco/elenco_1.png" alt="artilheiro">
+                        <p>🏆 Ricardo 🏆</p>
+                        <p>26 Gols</p>
+                        <h1>🥇</h1>
+                    </div>
+                </div>
+                <div id="cardDireito">
+                    <div id="conte">
+                        <h3>3°</h3>
+                        <img src="imagens/elenco/elenco_1.png" alt="artilheiro">
+                        <p>-André Ceará-</p>
+                        <p>16 Gols</p>
+                        <h3>🥉</h3>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h2>Aspirante</h2>
+
+            <div id="moldura">
+                <div id="cardEsquerdo">
+                    <div id="conte">
+                        <h2>2°</h2>
+                        <img src="imagens/elenco/elenco_1.png" alt="artilheiro">
+                        <p>__ Nivaldo __</p>
+                        <p>25 Gols</p>
+                        <h2>🥈</h2>
+                    </div>
+                </div>
+                <div id="cardCentral">
+                    <div id="conte">
+                        <h1>1°</h1>
+                        <img src="imagens/elenco/elenco_1.png" alt="artilheiro">
+                        <p>🏆 Marcos Jr</p>
+                        <p>26 Gols</p>
+                        <h1>🥇</h1>
+                    </div>
+                </div>
+                <div id="cardDireito">
+                    <div id="conte">
+                        <h3>3°</h3>
+                        <img src="imagens/elenco/elenco_1.png" alt="artilheiro">
+                        <p>_- Ambrósio -_</p>
+                        <p>18 Gols</p>
+                        <h3>🥉</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <h1>Jogos</h1>
+
+            <aside id="conteiner01">
+
+                <h2>Volta - Sábado 09/12/2023</h2>
+
+                <br>
+
+                <h4>Titular</h4>
+
+                <div id="casa">
+                    <img src="imagens/escudos/portuguesa.png" alt="escudo time local">
+                </div>
+                <div id="placar01">
+                    <img src="imagens/placar/placar00.png" alt="placar01">
+                </div>
+                <div id="x">
+                    <img src="imagens/placar/x.png" alt="x">
+                </div>
+                <div id="placar02">
+                    <img src="imagens/placar/placar03.png" alt="placar01">
+                </div>
+                <div id="fora">
+                    <img src="imagens/escudos/juventude.png" alt="escudo visitante">
+                </div>
+                <div id="nome01">
+                    <p>Portuguesa do Alegre</p>
+                </div>
+                <div id="nome02">
+                    <p>Juventude Roberto de Tino</p>
+                </div>
+                <div id="marcadores02">
+                    
+                </div>
+            </aside>
+            <aside id="conteiner02">
+
+                <br>
+
+                <h4>Aspirante</h4>
+
+                <div id="casa">
+                    <img src="imagens/escudos/portuguesa.png" alt="escudo time local">
+                </div>
+                <div id="placar01">
+                    <img src="imagens/placar/placar01.png" alt="placar01">
+                </div>
+                <div id="x">
+                    <img src="imagens/placar/x.png" alt="x">
+                </div>
+                <div id="placar02">
+                    <img src="imagens/placar/placar04.png" alt="placar02">
+                </div>
+                <div id="fora">
+                    <img src="imagens/escudos/juventude.png" alt="escudo visitante">
+                </div>
+                <div id="nome01">
+                    <p>Portuguesa do Alegre</p>
+                </div>
+                <div id="nome02">
+                    <p>Juventude Roberto de Tino</p>
+                </div>
+                <div id="marcadores01">
+                    <p>Adão</p>
+                </div>
+            </aside>
+            <aside id="conteiner01">
+                
+                <h2>Ida - Sábado 02/12/2023</h2>
+
+                <br>
+
+                <h4>Titular</h4>
+
+                <div id="casa">
+                    <img src="imagens/escudos/juventude.png" alt="escudo time local">
+                </div>
+                <div id="placar01">
+                    <img src="imagens/placar/placar05.png" alt="placar01">
+                </div>
+                <div id="x">
+                    <img src="imagens/placar/x.png" alt="x">
+                </div>
+                <div id="placar02">
+                    <img src="imagens/placar/placar00.png" alt="placar02">
+                </div>
+                <div id="fora">
+                    <img src="imagens/escudos/portuguesa.png" alt="escudo visitante">
+                </div>
+                <div id="nome01">
+                    <p>Juventude Roberto de Tino</p>
+                </div>
+                <div id="nome02">
+                    <p>Portuguesa do Alegre</p>
+                </div>
+                <div id="marcadores04">
+                    
+                </div>
+            </aside>
+            <aside id="conteiner02">
+
+                <br>
+
+                <h4>Aspirante</h4>
+
+                <div id="casa">
+                    <img src="imagens/escudos/juventude.png" alt="escudo time local">
+                </div>
+                <div id="placar01">
+                    <img src="imagens/placar/placar01.png" alt="placar01">
+                </div>
+                <div id="x">
+                    <img src="imagens/placar/x.png" alt="x">
+                </div>
+                <div id="placar02">
+                    <img src="imagens/placar/placar01.png" alt="placar02">
+                </div>
+                <div id="fora">
+                    <img src="imagens/escudos/portuguesa.png" alt="escudo visitante">
+                </div>
+                <div id="nome01">
+                    <p>Juventude Roberto de Tino</p>
+                </div>
+                <div id="nome02">
+                    <p>Portuguesa do Alegre</p>
+                </div>
+                <div id="marcadores03">
+                    <p>Neguinho R.N</p>
+                </div>
+            </aside>
             <aside id="conteiner01">
                 <h2>Ida - Sábado 25/11/2023</h2>
                 <br>
