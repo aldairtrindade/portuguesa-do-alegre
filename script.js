@@ -13,3 +13,11 @@ function clickDetalhes(){
         conteudo.style.display = 'block'
     }
 }
+
+function clickDetalhesTorneios(){
+    if(expandir.style.display == 'block'){
+        expandir.style.display = 'none'
+    } else{
+        expandir.style.display = 'block'
+    }
+}

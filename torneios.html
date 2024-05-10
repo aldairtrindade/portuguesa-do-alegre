@@ -36,7 +36,14 @@
             margin-top: -2px;
         }
 
-        main > section{
+        main > article{
+            position: relative;
+            width: 382px;
+            height: 600px;
+            margin: auto;
+        }
+
+        main > article > section{
             position: relative;
             width: 375px;
             height: 200px;
@@ -202,6 +209,27 @@
             font-weight: bolder;
         }
 
+        div#torneios{
+            text-align: center;
+            display: block;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            text-decoration: underline;
+            font-size: 1.5em;
+            padding: 10px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        article#expandir{
+            display: none;
+        }
+
+        article#conteudo{
+            display: none;
+        }
+
         .campeao{
             position: absolute;
             top: 70%;
@@ -232,140 +260,269 @@
     <main>
         <h1>Torneios</h1>
         <br>
-        <h2>Torneio de Correia 07/10/23</h2>
-        <h2>Titular</h2>
-        <br>
-        <section>
-            <div id="quartas-l">
-                <div id="quartas0">
-                    <img src="imagens/escudos torneio/sp.png" alt="">
-                </div>
-                <div id="quartas1">
-                    <img src="imagens/escudos torneio/flamengo.png" alt="">
-                </div>
-                <div id="quartas2">
-                    <img src="imagens/escudos torneio/gremio.png" alt="">
-                </div>
-                <div id="quartas3">
-                    <img src="imagens/escudos torneio/santoss.png" alt="">
-                </div>
-            </div>
+        <div id="torneios"  onclick="clickDetalhesTorneios()">
+            -Torneio de Correia 07/10/23-
+        </div>
 
-            <div id="quartas-r">
-                <div id="quartas4">
-                    <img src="imagens/escudos torneio/juventude.png" alt="">
+        <article id="expandir">
+            <h2>Titular</h2>
+            <br>
+            <section>
+                <div id="quartas-l">
+                    <div id="quartas0">
+                        <img src="imagens/escudos torneio/sp.png" alt="">
+                    </div>
+                    <div id="quartas1">
+                        <img src="imagens/escudos torneio/flamengo.png" alt="">
+                    </div>
+                    <div id="quartas2">
+                        <img src="imagens/escudos torneio/gremio.png" alt="">
+                    </div>
+                    <div id="quartas3">
+                        <img src="imagens/escudos torneio/santoss.png" alt="">
+                    </div>
                 </div>
-                <div id="quartas5">
-                    <img src="imagens/escudos torneio/portuguesa.png" alt="">
+                <div id="quartas-r">
+                    <div id="quartas4">
+                        <img src="imagens/escudos torneio/juventude.png" alt="">
+                    </div>
+                    <div id="quartas5">
+                        <img src="imagens/escudos torneio/portuguesa.png" alt="">
+                    </div>
+                    <div id="quartas6">
+                        <img src="imagens/escudos torneio/bayer.png" alt="">
+                    </div>
+                    <div id="quartas7">
+                        <img src="imagens/escudos torneio/vasco.png" alt="">
+                    </div>
                 </div>
-                <div id="quartas6">
-                    <img src="imagens/escudos torneio/bayer.png" alt="">
+                <div id="semi-l">
+                    <div id="semi0">
+                        <img src="imagens/escudos torneio/flamengo-35.png" alt="">
+                    </div>
+                    <div id="semi1">
+                        <img src="imagens/escudos torneio/santos-35.png" alt="">
+                    </div>
                 </div>
-                <div id="quartas7">
-                    <img src="imagens/escudos torneio/vasco.png" alt="">
+                <div id="semi-r">
+                    <div id="semi2">
+                        <img src="imagens/escudos torneio/portuguesa-35.png" alt="">
+                    </div>
+                    <div id="semi3">
+                        <img src="imagens/escudos torneio/bayer-35.png" alt="">
+                    </div>
                 </div>
-            </div>
+                <div id="final">
+                    <div id="final0">
+                        <img src="imagens/escudos torneio/santos-40.png" alt="">
+                    </div>
+                    <div id="final1">
+                        <img src="imagens/escudos torneio/bayer-40.png" alt="">
+                    </div>
+                    <div id="final2">
+                        <img src="imagens/escudos torneio/santos-50.png" alt="">
+                        ..-🏆-..
+                    </div>
+                    <p>X</p>
+                    <p class="campeao">Genildo Santos FC. Campeão</p>
+                </div>
+            </section>
+            <br>
+            <h2>Aspirantes</h2>
+            <br>
+            <section>
+                <div id="quartas-l">
+                    <div id="quartas0">
+                        <img src="imagens/escudos torneio/sp.png" alt="">
+                    </div>
+                    <div id="quartas1">
+                        <img src="imagens/escudos torneio/flamengo.png" alt="">
+                    </div>
+                    <div id="quartas2">
+                        <img src="imagens/escudos torneio/juventude.png" alt="">
+                    </div>
+                    <div id="quartas3">
+                        <img src="imagens/escudos torneio/portuguesa.png" alt="">
+                    </div>
+                </div>
+                <div id="quartas-r">
+                    <div id="quartas4">
+                        <img src="imagens/escudos torneio/gremio.png" alt="">
+                    </div>
+                    <div id="quartas5">
+                        <img src="imagens/escudos torneio/santoss.png" alt="">
+                    </div>
+                    <div id="quartas6">
+                        <img src="imagens/escudos torneio/bayer.png" alt="">
+                    </div>
+                    <div id="quartas7">
+                        <img src="imagens/escudos torneio/vasco.png" alt="">
+                    </div>
+                </div>
+                <div id="semi-l">
+                    <div id="semi0">
+                        <img src="imagens/escudos torneio/flamengo-35.png" alt="">
+                    </div>
+                    <div id="semi1">
+                        <img src="imagens/escudos torneio/portuguesa-35.png" alt="">
+                    </div>
+                </div>
+                <div id="semi-r">
+                    <div id="semi2">
+                        <img src="imagens/escudos torneio/gremio-35.png" alt="">
+                    </div>
+                    <div id="semi3">
+                        <img src="imagens/escudos torneio/bayer-35.png" alt="">
+                    </div>
+                </div>
+                <div id="final">
+                    <div id="final0">
+                        <img src="imagens/escudos torneio/flamengo-40.png" alt="">
+                    </div>
+                    <div id="final1">
+                        <img src="imagens/escudos torneio/bayer-40.png" alt="">
+                    </div>
+                    <div id="final2">
+                        <img src="imagens/escudos torneio/bayer-50.png" alt="">
+                        ..-🏆-..
+                    </div>
+                    <p>X</p>
+                    <p class="campeao">Juninho Bayer FC. Campeão</p>
+                </div>
+            </section>
+        </article>
 
-            <div id="semi-l">
-                <div id="semi0">
-                    <img src="imagens/escudos torneio/flamengo-35.png" alt="">
-                </div>
-                <div id="semi1">
-                    <img src="imagens/escudos torneio/santos-35.png" alt="">
-                </div>
-            </div>
+        <div id="torneios"  onclick="clickDetalhes()">
+            -Torneio do Nacional 11/05/24-
+        </div>
 
-            <div id="semi-r">
-                <div id="semi2">
-                    <img src="imagens/escudos torneio/portuguesa-35.png" alt="">
+        <article id="conteudo">
+            <h2>Titular</h2>
+            <br>
+            <section>
+                <div id="quartas-l">
+                    <div id="quartas0">
+                        <img src="imagens/escudos torneio/nacional30.png" alt="">
+                    </div>
+                    <div id="quartas1">
+                        <img src="imagens/escudos torneio/psg30.png" alt="">
+                    </div>
+                    <div id="quartas2">
+                        <img src="imagens/escudos torneio/sp.png" alt="">
+                    </div>
+                    <div id="quartas3">
+                        <img src="imagens/escudos torneio/sp30.png" alt="">
+                    </div>
                 </div>
-                <div id="semi3">
-                    <img src="imagens/escudos torneio/bayer-35.png" alt="">
+                <div id="quartas-r">
+                    <div id="quartas4">
+                        <img src="imagens/escudos torneio/sport30.png" alt="">
+                    </div>
+                    <div id="quartas5">
+                        <img src="imagens/escudos torneio/indio30.png" alt="">
+                    </div>
+                    <div id="quartas6">
+                        <img src="imagens/escudos torneio/portuguesa.png" alt="">
+                    </div>
+                    <div id="quartas7">
+                        <img src="imagens/escudos torneio/santacruz.png" alt="">
+                    </div>
                 </div>
-            </div>
-
-            <div id="final">
-                <div id="final0">
-                    <img src="imagens/escudos torneio/santos-40.png" alt="">
+                <div id="semi-l">
+                    <div id="semi0">
+                        <img src="imagens/escudos torneio/.png" alt="">
+                    </div>
+                    <div id="semi1">
+                        <img src="imagens/escudos torneio/.png" alt="">
+                    </div>
                 </div>
-                <div id="final1">
-                    <img src="imagens/escudos torneio/bayer-40.png" alt="">
+                <div id="semi-r">
+                    <div id="semi2">
+                        <img src="imagens/escudos torneio/.png" alt="">
+                    </div>
+                    <div id="semi3">
+                        <img src="imagens/escudos torneio/.png" alt="">
+                    </div>
                 </div>
-                <div id="final2">
-                    <img src="imagens/escudos torneio/santos-50.png" alt="">
-                    ..-🏆-..
+                <div id="final">
+                    <div id="final0">
+                        <img src="imagens/escudos torneio/.png" alt="">
+                    </div>
+                    <div id="final1">
+                        <img src="imagens/escudos torneio/.png" alt="">
+                    </div>
+                    <div>
+                        <img src="imagens/escudos torneio/.png" alt="">
+                        
+                    </div>
+                    <p></p>
+                    <p class="campeao"></p>
                 </div>
-                <p>X</p>
-                <p class="campeao">Genildo Santos FC. Campeão</p>
-            </div>
-        </section>
-        <br>
-        <h2>Aspirantes</h2>
-        <br>
-        <section>
-            <div id="quartas-l">
-                <div id="quartas0">
-                    <img src="imagens/escudos torneio/sp.png" alt="">
+            </section>
+            <br>
+            <h2>Aspirantes</h2>
+            <br>
+            <section>
+                <div id="quartas-l">
+                    <div id="quartas0">
+                        <img src="imagens/escudos torneio/nacional30.png" alt="">
+                    </div>
+                    <div id="quartas1">
+                        <img src="imagens/escudos torneio/psg30.png" alt="">
+                    </div>
+                    <div id="quartas2">
+                        <img src="imagens/escudos torneio/sp.png" alt="">
+                    </div>
+                    <div id="quartas3">
+                        <img src="imagens/escudos torneio/sp30.png" alt="">
+                    </div>
                 </div>
-                <div id="quartas1">
-                    <img src="imagens/escudos torneio/flamengo.png" alt="">
+                <div id="quartas-r">
+                    <div id="quartas4">
+                        <img src="imagens/escudos torneio/sport30.png" alt="">
+                    </div>
+                    <div id="quartas5">
+                        <img src="imagens/escudos torneio/indio30.png" alt="">
+                    </div>
+                    <div id="quartas6">
+                        <img src="imagens/escudos torneio/portuguesa.png" alt="">
+                    </div>
+                    <div id="quartas7">
+                        <img src="imagens/escudos torneio/santacruz.png" alt="">
+                    </div>
                 </div>
-                <div id="quartas2">
-                    <img src="imagens/escudos torneio/juventude.png" alt="">
+                <div id="semi-l">
+                    <div id="semi0">
+                        <img src="imagens/escudos torneio/.png" alt="">
+                    </div>
+                    <div id="semi1">
+                        <img src="imagens/escudos torneio/.png" alt="">
+                    </div>
                 </div>
-                <div id="quartas3">
-                    <img src="imagens/escudos torneio/portuguesa.png" alt="">
+                <div id="semi-r">
+                    <div id="semi2">
+                        <img src="imagens/escudos torneio/.png" alt="">
+                    </div>
+                    <div id="semi3">
+                        <img src="imagens/escudos torneio/.png" alt="">
+                    </div>
                 </div>
-            </div>
-
-            <div id="quartas-r">
-                <div id="quartas4">
-                    <img src="imagens/escudos torneio/gremio.png" alt="">
+                <div id="final">
+                    <div id="final0">
+                        <img src="imagens/escudos torneio/.png" alt="">
+                    </div>
+                    <div id="final1">
+                        <img src="imagens/escudos torneio/.png" alt="">
+                    </div>
+                    <div>
+                        <img src="imagens/escudos torneio/.png" alt="">
+                        
+                    </div>
+                    <p></p>
+                    <p class="campeao"></p>
                 </div>
-                <div id="quartas5">
-                    <img src="imagens/escudos torneio/santoss.png" alt="">
-                </div>
-                <div id="quartas6">
-                    <img src="imagens/escudos torneio/bayer.png" alt="">
-                </div>
-                <div id="quartas7">
-                    <img src="imagens/escudos torneio/vasco.png" alt="">
-                </div>
-            </div>
-
-            <div id="semi-l">
-                <div id="semi0">
-                    <img src="imagens/escudos torneio/flamengo-35.png" alt="">
-                </div>
-                <div id="semi1">
-                    <img src="imagens/escudos torneio/portuguesa-35.png" alt="">
-                </div>
-            </div>
-
-            <div id="semi-r">
-                <div id="semi2">
-                    <img src="imagens/escudos torneio/gremio-35.png" alt="">
-                </div>
-                <div id="semi3">
-                    <img src="imagens/escudos torneio/bayer-35.png" alt="">
-                </div>
-            </div>
-
-            <div id="final">
-                <div id="final0">
-                    <img src="imagens/escudos torneio/flamengo-40.png" alt="">
-                </div>
-                <div id="final1">
-                    <img src="imagens/escudos torneio/bayer-40.png" alt="">
-                </div>
-                <div id="final2">
-                    <img src="imagens/escudos torneio/bayer-50.png" alt="">
-                    ..-🏆-..
-                </div>
-                <p>X</p>
-                <p class="campeao">Juninho Bayer FC. Campeão</p>
-            </div>
-        </section>
+            </section>
+        </article>
     </main>
     <footer>
         <p>Patrocinadores:</p>
